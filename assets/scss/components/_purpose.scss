@@ -1,0 +1,48 @@
+.purpose {
+  .container {
+    background-image: url("../images/purpose-bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 3rem 15% 0;
+    font-family: "Gotham Book";
+    .text {
+      margin-top: 1.5rem;
+      color: $blue;
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+      font-size: 15px;
+      line-height: 26px;
+    }
+    .secondtext {
+      margin-top: 3rem;
+      background-color: $yellow;
+      color: white;
+      padding: 40px;
+      font-size: 11px;
+      line-height: 22px;
+      text-align: center;
+      box-shadow: 0 9px 19px #ccc;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      width: 100%;
+      padding: 3rem 0 0;
+      background-size: auto;
+      background-position-x: right;
+
+      .text {
+        font-size: 13px;
+        line-height: 20px;
+        padding: 0 5% 0;
+      }
+
+      .secondtext {
+        padding: 30px 20px;
+        font-size: 12px;
+      }
+    }
+  }
+}

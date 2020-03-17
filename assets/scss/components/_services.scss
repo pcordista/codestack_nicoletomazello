@@ -1,0 +1,103 @@
+.services {
+  margin-top: 5rem;
+  .bg {
+    background-image: url("../images/gray-bg.jpg");
+    background-size: 90% 100%;
+    background-position-y: 90px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding: 0 5% 4rem;
+    position: relative;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+
+    .imgBg {
+      position: absolute;
+      bottom: -3rem;
+      left: -3rem;
+      z-index: -1;
+    }
+    & > div {
+      background-color: white;
+      .title {
+        background-image: url("../images/service-title-one.png");
+        padding: 2rem 0;
+        background-size: cover;
+        font-size: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          background-image: url("../images/service-title-two.png") !important;
+          color: white;
+        }
+      }
+
+      .text {
+        padding: 20px;
+        line-height: 25px;
+        font-size: 13px;
+        font-family: "Gotham Book";
+        min-height: 62ch;
+      }
+
+      .button {
+        padding: 1rem 0;
+        a {
+          color: #d6d6d6;
+          font-family: "Gotham Bold";
+          font-size: 18px;
+          transition: 0.3s;
+          display: block;
+          text-align: center;
+
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(3) {
+      .title {
+        background-image: url("../images/service-title-two.png") !important;
+        color: white;
+      }
+
+      .button a {
+        color: $yellow !important;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .bg {
+      padding: 0 0 4rem;
+      background-size: 100% 100%;
+    }
+    .container {
+      width: 100%;
+      padding: 0 5%;
+    }
+    .grid {
+      grid-template-columns: 100%;
+      grid-gap: 3rem;
+
+      .imgBg {
+        z-index: 0;
+      }
+
+      & > div {
+        box-shadow: 0 0 6px #ccc;
+        z-index: 5;
+
+        .text {
+          min-height: auto;
+        }
+      }
+    }
+  }
+}

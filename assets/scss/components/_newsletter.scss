@@ -1,0 +1,82 @@
+.newsletter {
+    margin: -100px 20% 0;
+  z-index: 99;
+  position: relative;
+  background-color: white;
+  padding: 40px;
+
+  .novo {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 23px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+
+    .img {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .title {
+      color: $blue;
+      font-size: 25px;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      color: $yellow;
+      font-size: 11px;
+    }
+
+    .input {
+      display: grid;
+      margin-top: 1rem;
+      grid-template-columns: 1fr 1fr 0.7fr;
+      grid-gap: 15px;
+      input {
+        border: 1px solid #dcdcdc;
+        height: 40px;
+        line-height: 41px;
+      }
+      button {
+        font-weight: 700;
+        font-style: italic;
+        padding: 7px 15px 10px;
+        font-size: 11px;
+        box-shadow: 0 6px 16px #ccc;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    margin: -50px 5% 0;
+    padding: 30px 10px;
+    z-index: 5;
+
+    .novo {
+      left: 1%;
+    }
+
+    .content {
+      .title {
+        font-size: 20px;
+      }
+
+      .input {
+        grid-template-columns: 100%;
+
+        button {
+          max-width: 150px;
+        }
+      }
+
+      .img {
+        width: 90%;
+      }
+    }
+  }
+}

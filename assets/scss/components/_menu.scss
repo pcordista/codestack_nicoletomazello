@@ -1,0 +1,47 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  color: white;
+  transition: 0.3s;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    font-size: 18px;
+    transition: 0.3s;
+
+    .logo {
+      width: 75px;
+    }
+
+    .menu-link {
+      display: flex;
+      align-items: center;
+      .redes {
+        margin-right: 10px;
+        img {
+          @include webkit_prefix("filter", "brightness(0) invert(1);");
+          height: 20px;
+          margin: 0 10px;
+        }
+      }
+      span {
+        margin: 0 10px 0 20px;
+      }
+      #sidebartoggle {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      padding: 1.5rem 0
+    }
+  }
+}

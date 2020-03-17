@@ -1,0 +1,126 @@
+.blog-page {
+    .container {
+        padding: 4rem 6%;
+
+        .grid {
+            display: grid;
+            grid-template-columns: 4fr 2fr;
+            grid-gap: 4rem;
+
+            .item {
+                box-shadow: 0 0 3px #ccc;
+                margin-bottom: 3rem;
+
+                .content {
+                    padding: 20px;
+
+                    .category {
+                        color: #5a5a5a;
+                    }
+
+                    h5 {
+                        font-family: 'Flama Bold';
+                        color: $blue;
+                        font-size: 20px;
+                        margin: 5px 0;
+                    }
+
+                    .text {
+                        color: #5a5a5a;
+                        font-size: 11px;
+                    }
+
+                    .button {
+                        padding: 10px 0;
+                        a {
+                            padding: 10px 0;
+                            font-size: 12px;
+                            color: #aaaaaa;
+                            font-family: "Gotham Bold"
+                        }
+                    }
+                }
+            }
+
+            .shape {
+                background-color: #f2f5fa;
+                margin-bottom: 2rem;
+                box-shadow: 0 0 3px #ccc;
+                padding: 35px;
+
+                h5 {
+                    color: $blue;
+                }
+
+                ul {
+                    margin-top: 20px;
+
+                    li {
+                        color: #7f7f7f;
+                        text-transform: uppercase;
+                        margin: 15px 0
+                    }
+
+                }
+
+                .post-item {
+                    margin-top: 1.5rem;
+                    display: grid;
+                    grid-template-columns: 100px 1fr;
+
+                    .image {
+                        
+                        img {
+                            border-radius: 50%;
+                            width: 70px;
+                            height: 70px;
+                            @include webkit_prefix("object-fit", "cover");
+                            @include webkit_prefix("object-position", "center");
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .title {
+                        color: $blue;
+                    }
+
+                    .date {
+                        color: #717579;
+                        font-size: 13px;
+                    }
+
+                }
+            }
+
+            .post {
+
+                .category {
+                    font-family: 'Gotham Bold';
+                    color: #7f7f7f;
+                }
+
+                .title {
+                    color: $blue;
+                    margin: 10px 0 15px;
+                    font-family: 'Flama Bold';
+                }
+
+                .date {
+                    color: #717579;
+                    font-size: 13px;
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        .container {
+            padding: 4rem 2%;
+            .grid {
+                grid-template-columns: 100%;
+            }
+        }
+    }
+
+}

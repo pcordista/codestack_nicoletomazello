@@ -1,0 +1,86 @@
+.parallax-home {
+  margin-top: 150px;
+  .content {
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    max-width: 900px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+
+    .relative {
+      padding: 1rem 0;
+      &:before {
+        background-image: url("../images/icon-quote.png");
+        position: absolute;
+        content: " ";
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: -20px;
+        top: 0;
+      }
+    }
+
+    .text {
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+    .nicole {
+      margin-top: 10px;
+      font-family: "Didot Italic";
+    }
+
+    span {
+      font-size: 20px;
+      &::before,
+      &::after {
+        display: inline-block;
+        top: 9px;
+        position: relative;
+        content: "";
+        border-top: 0.1rem solid white;
+        width: 3rem;
+        margin: 0 1rem;
+        transform: translateY(-1rem);
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 0;
+    height: 300px;
+
+    .parallax img {
+      object-fit: cover;
+    }
+
+    .content {
+
+      .relative:before {
+        width: 60px;
+      }
+      .text {
+        font-size: 11px;
+        line-height: 18px;
+      }
+
+      .nicole {
+        span {
+          font-size: 15px;
+
+          &:after, &:before {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}

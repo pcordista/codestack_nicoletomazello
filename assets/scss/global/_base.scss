@@ -1,0 +1,118 @@
+* {
+    max-width: 100vw;
+    box-sizing: border-box
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw !important;
+    overflow-x: hidden;
+    font-family: 'Flama'
+}
+
+
+input {
+    padding-left: 10px !important;
+    width: calc(100% - 10px) !important;
+    margin-bottom: 0px !important;
+}
+
+img {
+    display: block
+}
+
+a {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+:focus {
+    outline: transparent auto 0px !important;
+}
+
+/********************* HELPERS *********************/
+.bgYellow {
+    background-color: $yellow;
+}
+
+.bgGray {
+    background-color: $gray;
+}
+
+/********************* MENU *********************/
+.pushmenu-right {
+    right: -240px;
+  
+}
+  
+.pushmenu-right.pushmenu-open {
+    right: 0;
+}
+  
+.pushmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+
+    .menu {
+        transition: .3s
+    }
+}
+  
+.pushmenu-push-toleft {
+    right: 240px;
+
+    .menu {
+        right: 240px;
+    }
+}
+  
+/*Transition*/
+.pushmenu, .pushmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;  
+}
+
+
+.button-default {
+    color: white;
+    font-family: "Flama";
+    text-transform: uppercase;
+    background-color: $yellow;
+    padding: 7px 35px 10px;
+    border-radius: 23px;
+    border: 0;
+    font-weight: 300;
+    outline: 0;
+    font-size: 12px;
+    box-shadow: 0 6px 16px #ccc;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.menusticky {
+    background-color: $blue;
+    .container {
+        padding: .5rem 3rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menusticky {
+        .container {
+            padding: .5rem 0 !important
+        }
+    }
+}

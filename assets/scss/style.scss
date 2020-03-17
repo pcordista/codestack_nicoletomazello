@@ -1,0 +1,28 @@
+// GENERAL CONFIGS
+@import "./global/mixins";
+@import "./global/variables";
+@import "./global/fonts";
+@import "./global/base";
+
+// COMPONENTS
+@import "./components/menu";
+@import "./components/slider";
+@import "./components/newsletter";
+@import "./components/about";
+@import "./components/title";
+@import "./components/parallax";
+@import "./components/services";
+@import "./components/testemonials";
+@import "./components/purpose";
+@import "./components/sidenav";
+@import "./components/news";
+@import "./components/events";
+@import "./components/contact";
+@import "./components/instagram";
+@import "./components/footer";
+@import "./components/modals";
+@import "./components/banner";
+
+// PAGES
+@import "./pages/about";
+@import "./pages/blog";

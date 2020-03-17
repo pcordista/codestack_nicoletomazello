@@ -1,0 +1,54 @@
+.about {
+  margin-bottom: 3rem;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+
+    .text {
+      font-family: "Gotham Book";
+      color: var(--blue);
+      font-size: 14px;
+    }
+
+    .video {
+      iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+      }
+
+      img {
+        position: absolute;
+        bottom: 0rem;
+        right: -2rem;
+        width: 150px;
+        z-index: -1;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .section-title {
+      text-align: center;
+    }
+    .grid {
+      grid-template-columns: 100% !important;
+
+      .text {
+        .margin_2_top {
+          text-align: center;
+        }
+      }
+
+      .video {
+        margin-top: 1.5rem;
+
+        img {
+          bottom: -2rem;
+          right: -5%;
+        }
+      }
+    }
+  }
+}

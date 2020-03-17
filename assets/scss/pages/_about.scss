@@ -1,0 +1,71 @@
+.about-page {
+  margin-top: 5rem;
+  .section-one {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-gap: 5%;
+    margin-top: 3rem;
+
+    img {
+      max-width: 100%;
+    }
+
+    .text {
+      font-family: "Gotham Book";
+      color: $blue;
+      font-size: 14px;
+
+      iframe {
+        max-width: 90%;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .section-two {
+      margin-top: -35px;
+      background-color: #f2f5fa;
+      padding-top: 3rem;
+    .services {
+        margin-top: 0px !important;
+        .section-title > .subtitle {
+            color: #54c0a3
+        }
+      .grid > div .title {
+        background-image: url("../images/service-title-three.jpg");
+        background-position: right;
+        background-size: cover;
+        color: white;
+      }
+    }
+  }
+
+  .parallax-home {
+      margin-top: 0px
+  }
+
+  .purpose {
+      margin-top: 3rem;
+  }
+
+  @media (max-width: 800px) {
+    .section-one {
+      grid-template-columns: 100%;
+
+      .text {
+        grid-row-start: 1;
+
+        iframe {
+          max-width: 100%
+        }
+      }
+    }
+
+    .section-two {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 3rem 5%;
+    }
+  }
+}

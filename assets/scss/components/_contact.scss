@@ -1,0 +1,92 @@
+.contact {
+    margin-top: 100px;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .left-side {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #f2f5fa !important;
+            padding: 6rem 0;
+            & > div {
+                max-width: 400px;
+
+                .title {
+                    font-family: "Didot Italic";
+                    color: $blue;
+                    font-size: 24px;
+                }
+
+                .text {
+                    margin-top: 10px;
+                    color: #6b6b6b
+                }
+            }
+        }
+
+        .right-side {
+            background-image: url("../images/contact-bg.jpg");
+            background-size: cover;
+            padding: 6rem 2rem;
+            box-shadow: 0 0 16px #ccc;
+            top: -30px;
+            position: relative;
+            
+            & > div {
+                max-width: 400px;
+
+                .title {
+                    font-size: 24px;
+                }
+
+                .subtitle {
+                    font-size: 18px;
+                }
+
+                .row {
+                    margin: 0 -.75rem !important;
+
+                    input, textarea {
+                        border-bottom: 2px solid white !important;
+                        margin-top: 10px;
+                        &::placeholder {
+                            color: #916d16
+                        }
+                    }
+
+                    textarea {
+                        padding-left: 10px;
+                        padding-top: 10px;
+                        width: calc(100% - 10px)
+                    }
+                }
+
+                .button-default {
+                    margin-top: 15px;
+                    background-color: white;
+                    color: $yellow ;
+                    box-shadow: none !important
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        .grid {
+            grid-template-columns: 100%;
+
+            .left-side {
+                padding: 3rem 5%;
+            }
+
+            .right-side {
+                top: 0;
+                padding: 3rem 5%;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+footer {
+  margin-top: 180px;
+  background-color: #f1f3f8;
+
+  .newsletter {
+    top: -110px;
+    box-shadow: 0 0 3px #ccc;
+  }
+
+  .footer {
+    margin-top: -90px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    .nt {
+      width: 60px;
+    }
+
+    .footer-menu > * {
+      margin: 0 10px;
+      color: $blue;
+      font-style: italic;
+    }
+
+    .ssl {
+      width: 40px;
+      margin-top: 1rem
+    }
+
+    .markdigx {
+      padding: 2rem 0;
+      border-top: 1px solid #ccc;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .footer-menu {
+      font-size: 12px
+    }
+  }
+}

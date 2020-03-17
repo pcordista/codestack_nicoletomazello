@@ -1,0 +1,18 @@
+.section-title {
+  .subtitle {
+    color: $yellow;
+    text-transform: uppercase;
+  }
+  .title {
+    font-family: "Didot Italic";
+    font-size: 35px;
+    color: $blue;
+    line-height: 1.1;
+  }
+
+  @media (max-width: 800px) {
+    .title {
+      font-size: 30px
+    }
+  }
+}
