@@ -57,6 +57,7 @@ header("Etag: $etag");
 
             <div class="shape hide-on-med-and-down">
                 <h5>Artigos & Posts</h5>
+                <a href="./single.php">
                 <div class="post-item">
                     <div class="image">
                         <img src="assets/images/post.jpg">
@@ -66,6 +67,8 @@ header("Etag: $etag");
                         <div class="date">16 Dez, 2019</div>
                     </div>
                 </div>
+                </a>
+                <a href="./single.php">
                 <div class="post-item">
                     <div class="image">
                         <img src="assets/images/post.jpg">
@@ -75,6 +78,8 @@ header("Etag: $etag");
                         <div class="date">16 Dez, 2019</div>
                     </div>
                 </div>
+                </a>
+                <a href="./single.php">
                 <div class="post-item">
                     <div class="image">
                         <img src="assets/images/post.jpg">
@@ -84,6 +89,7 @@ header("Etag: $etag");
                         <div class="date">16 Dez, 2019</div>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>

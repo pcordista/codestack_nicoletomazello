@@ -14,7 +14,7 @@
                     'Psicóloga graduada pela Universidade Estadual de Londrina (UEL - PR), pós graduada em Gestão de Recursos Humanos (PUC - PR) e em Dinâmica dos Grupos (SBDG), com formação em Health & Wellness Coaching (ICF - Toronto, Canadá) e em Mentoria (Escola de Mentores - SP).<BR><BR>Atua há mais de 13 anos em empresas na área de Desenvolvimento Estratégico da Essência Humana, com foco em mudança e fortalecimento da Cultura Organizacional por meio de alinhamento entre os princípios da Diretoria, atuação e comunicação das Lideranças e treinamento das Equipes.<BR><BR>Atua como Coach de Felicidade Profissional e Organizacional desde 2014, dedicando-se à ajudar profissionais a construírem sua jornada com mais autenticidade, simplicidade, leveza e resultados.
                 </div>
                 <div class="margin_2_top">
-                    <a href="/" class="button-default textUpper">
+                    <a href="./about.php" class="button-default textUpper">
                         saiba mais
                     </a>
                 </div>

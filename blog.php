@@ -40,23 +40,25 @@ header("Etag: $etag");
                     </a>
                 </div>
                 <div class="item">
-                    <img src="assets/images/post.jpg" alt="" class="widthfull">
-                    <div class="content">
-                        <div class="category">
-                            <span>Novidades</span>, <span>Coach</span>
+                    <a href="./single.php">
+                        <img src="assets/images/post.jpg" alt="" class="widthfull">
+                        <div class="content">
+                            <div class="category">
+                                <span>Novidades</span>, <span>Coach</span>
+                            </div>
+                            <h3 class="title">
+                                Business & Executive Coaching
+                            </h3>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
+                            <div class="button">
+                                <a href="/single.php">
+                                    Saiba Mais
+                                </a>
+                            </div>
                         </div>
-                        <h3 class="title">
-                            Business & Executive Coaching
-                        </h3>
-                        <div class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
-                        <div class="button">
-                            <a href="/single.php">
-                                Saiba Mais
-                            </a>
-                        </div>
-                    </div>
                 </div>
+                </a>
             </div>
             <div>
                 <div class="shape">
@@ -71,33 +73,39 @@ header("Etag: $etag");
 
                 <div class="shape hide-on-med-and-down">
                     <h5>Artigos & Posts</h5>
-                    <div class="post-item">
-                        <div class="image">
-                            <img src="assets/images/post.jpg">
+                    <a href="./single.php">
+                        <div class="post-item">
+                            <div class="image">
+                                <img src="assets/images/post.jpg">
+                            </div>
+                            <div>
+                                <div class="title">Business & Executive Coaching</div>
+                                <div class="date">16 Dez, 2019</div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="title">Business & Executive Coaching</div>
-                            <div class="date">16 Dez, 2019</div>
+                    </a>
+                    <a href="./single.php">
+                        <div class="post-item">
+                            <div class="image">
+                                <img src="assets/images/post.jpg">
+                            </div>
+                            <div>
+                                <div class="title">Business & Executive Coaching</div>
+                                <div class="date">16 Dez, 2019</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="post-item">
-                        <div class="image">
-                            <img src="assets/images/post.jpg">
+                    </a>
+                    <a href="./single.php">
+                        <div class="post-item">
+                            <div class="image">
+                                <img src="assets/images/post.jpg">
+                            </div>
+                            <div>
+                                <div class="title">Business & Executive Coaching</div>
+                                <div class="date">16 Dez, 2019</div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="title">Business & Executive Coaching</div>
-                            <div class="date">16 Dez, 2019</div>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <div class="image">
-                            <img src="assets/images/post.jpg">
-                        </div>
-                        <div>
-                            <div class="title">Business & Executive Coaching</div>
-                            <div class="date">16 Dez, 2019</div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

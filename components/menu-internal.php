@@ -1,6 +1,6 @@
 <header class="menu">
     <div class="container">
-        <a href="/">
+        <a href="./">
             <img src='assets/images/nicole-tomazella.png' class="logo" alt="Nicole Tomazella" />
         </a>
 

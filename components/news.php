@@ -26,6 +26,7 @@
                 </div>
             </div>
             <div class="news-two">
+                <a href="./single.php">
                 <div class="news relative">
                     <div class="grid-news">
                         <div class="bgGray"></div>
@@ -44,24 +45,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="news relative">
-                    <div class="grid-news">
-                        <div class="bgYellow"></div>
-                        <div>
-                            <img src="assets/images/news-three.jpg" alt="" class="widthfull">
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div>
-                            <div class="title">
-                                Professional Coaching
-                            </div>
-                            <div class="date">
-                                16 Dez, 2019
+                </a>
+                <a href="./single.php">
+                    <div class="news relative">
+                        <div class="grid-news">
+                            <div class="bgYellow"></div>
+                            <div>
+                                <img src="assets/images/news-three.jpg" alt="" class="widthfull">
                             </div>
                         </div>
+                        <div class="content">
+                            <div>
+                                <div class="title">
+                                    Professional Coaching
+                                </div>
+                                <div class="date">
+                                    16 Dez, 2019
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
