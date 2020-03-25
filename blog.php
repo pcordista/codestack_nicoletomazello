@@ -20,22 +20,24 @@ header("Etag: $etag");
         <div class="grid">
             <div>
                 <div class="item">
-                    <img src="assets/images/post.jpg" alt="" class="widthfull">
-                    <div class="content">
-                        <div class="category">
-                            <span>Novidades</span>, <span>Coach</span>
+                    <a href="./single.php">
+                        <img src="assets/images/post.jpg" alt="" class="widthfull">
+                        <div class="content">
+                            <div class="category">
+                                <span>Novidades</span>, <span>Coach</span>
+                            </div>
+                            <h5 class="title">
+                                Business & Executive Coaching
+                            </h5>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
+                            <div class="button">
+                                <a href="/single.php">
+                                    Saiba Mais
+                                </a>
+                            </div>
                         </div>
-                        <h5 class="title">
-                            Business & Executive Coaching
-                        </h5>
-                        <div class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
-                        <div class="button">
-                            <a href="/single.php">
-                                Saiba Mais
-                            </a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
                     <img src="assets/images/post.jpg" alt="" class="widthfull">

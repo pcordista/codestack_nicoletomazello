@@ -5,5 +5,5 @@
     <a href="index.php">Home</a>
     <a href="about.php">sobre</a>
     <a href="index.php#servicos">serviços</a>
-    <a href="index.php#blog">blog</a>
+    <a href="./blog.php">blog</a>
 </div>
