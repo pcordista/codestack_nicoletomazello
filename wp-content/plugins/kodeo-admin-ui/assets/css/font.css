@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+body.login #login *,
+.kaui,
+.kaui .media-modal *,
+.kaui .media-frame *,
+#wpadminbar *,
+#customize-controls * {
+    font-family: 'Raleway', sans-serif;
+}
+
+.kaui .media-frame input,
+.kaui .media-frame select,
+.kaui .media-frame textarea,
+.edit-post-visual-editor .block-editor-block-list__block[data-type="core/paragraph"] p[data-is-placeholder-visible=true]+p,
+.edit-post-visual-editor .block-editor-default-block-appender__content {
+    font-family: 'Raleway', sans-serif !important;
+}

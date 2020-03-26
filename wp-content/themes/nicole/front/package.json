@@ -1,9 +1,0 @@
-{
-  "name": "codestack_nicole",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "sass --watch assets/scss/style.scss:assets/css/style.css --style compressed"
-  }
-}

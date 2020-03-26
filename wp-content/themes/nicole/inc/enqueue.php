@@ -18,3 +18,5 @@ function cs_enqueue()
     wp_enqueue_script('cs-swiper-js',  $uri . '/assets/js/swiper.min.js', [], true);
     wp_enqueue_script('cs-app-js',  $uri . '/assets/js/app.js', [], true);
 }
+
+add_action('wp_enqueue_scripts', 'cs_enqueue');

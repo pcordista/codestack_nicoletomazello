@@ -3,10 +3,10 @@
         <div class="left-side">
             <div>
                 <div class="title">
-                    É pelo diálogo que iniciamos !
+                    <?php the_field('texto_contato', 'option'); ?>
                 </div>
                 <div class="text">
-                    Você já sabe que toda mudança começa com o primeiro passo! Estar aqui buscando orientação é um passo significativo. E para que possamos levar a mudança à aspectos concretos, queremos conversar com você, saber de suas reais necessidades (ou ajudar você a identificar quais são elas) para contribuir com o melhor caminho para seu momento profissional ou corporativo.
+                    <?php the_field('texto', 'option'); ?>
                 </div>
             </div>
         </div>

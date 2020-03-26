@@ -1,12 +1,11 @@
 <div class="parallax-container relative parallax-home">
-    <div class="parallax"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/parallax-about.jpg"></div>
+    <div class="parallax"><img src="<?php the_field('parallax_imagem'); ?> "></div>
     <div class="content">
         <div class="relative">
             <div class="text center-align">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
+                <?php the_field('parallax'); ?> </div>
             <div class="center-align nicole">
-                <span>Nicole Tomazella</span>
+                <span><?php the_field('parallax_assinatura'); ?> </span>
             </div>
         </div>
     </div>

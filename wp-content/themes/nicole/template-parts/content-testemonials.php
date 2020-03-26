@@ -11,66 +11,44 @@
         </div>
         <div class="swiper-container swiper-testemonials">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="grid">
-                        <div class="image">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/person.jpg" alt="Felipe Oliveira" />
-                        </div>
-                        <div class="content">
-                            <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
-                            <div class="margin_3_top person">
-                                <div class="name">Felipe Oliveira</div>
-                                <div class="business">nome da empresa</div>
+
+                <?php
+
+                $args = array(
+                    'post_type'              => array('depoimento'),
+                    'nopaging'               => true,
+                    'posts_per_page'         => '3',
+                );
+
+                $query = new WP_Query($args);
+
+                if ($query->have_posts()) {
+                    while ($query->have_posts()) {
+                        $query->the_post();
+                ?>
+
+                        <div class="swiper-slide">
+                            <div class="grid">
+                                <div class="image">
+                                    <img src="<?php the_field('imagem'); ?>" alt="<?php the_title(); ?>" />
+                                </div>
+                                <div class="content">
+                                    <div class="title"><?php the_field('texto_01'); ?></div>
+                                    <div class="text"><?php the_field('texto_01'); ?></div>
+                                    <div class="margin_3_top person">
+                                        <div class="name">Felipe Oliveira</div>
+                                        <div class="business"><?php the_field('empresa'); ?></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="grid">
-                        <div class="image">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/person.jpg" alt="Felipe Oliveira" />
-                        </div>
-                        <div class="content">
-                            <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
-                            <div class="margin_3_top person">
-                                <div class="name">Felipe Oliveira1</div>
-                                <div class="business">nome da empresa</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="grid">
-                        <div class="image">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/person.jpg" alt="Felipe Oliveira" />
-                        </div>
-                        <div class="content">
-                            <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
-                            <div class="margin_3_top person">
-                                <div class="name">Felipe Oliveira2</div>
-                                <div class="business">nome da empresa</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="grid">
-                        <div class="image">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/person.jpg" alt="Felipe Oliveira" />
-                        </div>
-                        <div class="content">
-                            <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
-                            <div class="margin_3_top person">
-                                <div class="name">Felipe Oliveira3</div>
-                                <div class="business">nome da empresa</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    }
+                }
+                wp_reset_postdata();
+
+                ?>
+
             </div>
         </div>
         <div class="swiper-button-next swiper-testemonials-next">

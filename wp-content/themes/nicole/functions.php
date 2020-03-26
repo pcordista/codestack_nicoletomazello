@@ -158,12 +158,14 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Custom Post Types.
+ */
+require get_template_directory() . '/inc/custom-posts.php';
+
+/**
  * Enqueue.
  */
-
-include(get_theme_file_path('inc/enqueue.php'));
-
-add_action('wp_enqueue_scripts', 'cs_enqueue');
+require get_template_directory() . '/inc/enqueue.php';
 
 /**
  * Add Custom Class.
