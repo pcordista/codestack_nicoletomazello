@@ -1,0 +1,39 @@
+# OPERATIONAL SYSTEM FILES
+ehthumbs.db
+Thumbs.db
+
+# LOG FILES
+error_log
+*.debug_log
+*.log
+*.dat
+
+# PACKAGED FILES
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# FILES STARTING WITH . OR ~ EXCETP .gitignore
+.*
+~*
+!.gitignore
+!.deployignore
+
+# MODULES AND CACHE
+node_modules/
+.sass-cache/
+
+# WORDPRESS
+wp-content/upgrade/
+wp-content/updraft/
+wp-content/uploads/
+wp-content/aiowps_backups/
+wp-config.php
+
+# PHPCS
+wpcs/
