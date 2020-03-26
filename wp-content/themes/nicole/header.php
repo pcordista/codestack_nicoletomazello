@@ -1,17 +1,44 @@
-<!DOCTYPE html>
-<html>
+<?php
+
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Code_Starter
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
 
 <head>
-  <title></title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="format-detection" content="telephone=yes">
-  
-  <?php include 'assets/css/CSS_includes.php'; ?>
-
+	<?php wp_head(); ?>
 </head>
 
-<body class="pushmenu-push">
+<body <?php body_class(); ?>>
+	<div id="page" class="site">
+
+		<header class="menu">
+			<div class="container">
+				<a href="./">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/nicole-tomazella.png" class="logo" alt="Nicole Tomazella" />
+				</a>
+
+				<div class="menu-link">
+					<i class="fa fa-search"></i>
+					<span>MENU</span>
+					<div id="sidebartoggle">
+						<i class="material-icons">menu</i>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->
+
+		<div id="content" class="site-content">

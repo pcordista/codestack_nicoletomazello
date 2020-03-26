@@ -1,0 +1,252 @@
+/*********************\ DISPLAY /*********************/
+
+:focus {
+    outline: transparent auto 0px;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.ocultarDisplay {
+    display: none !important;
+    transition: 1s
+}
+
+.justifycenter {
+    justify-content: center !important
+}
+
+.alignCenter {
+    align-items: center
+}
+
+.noShadow {
+    box-shadow: initial !important
+}
+
+
+/*********************\ MARGIN /*********************/
+
+.nomargin {
+    margin: 0 !important
+}
+
+.sectionStart {
+    margin-top: 3rem
+}
+
+.margin_05_top {
+    margin-top: .5rem !important
+}
+
+.margin_1_top {
+    margin-top: 1rem !important
+}
+
+.margin_2_top {
+    margin-top: 2rem !important
+}
+
+.margin_3_top {
+    margin-top: 3rem !important
+}
+
+.margin_1 {
+    margin: 1rem !important
+}
+
+.margin_2 {
+    margin: 2rem !important
+}
+
+.margin_2_vert {
+    margin: 2rem 0 !important
+}
+
+.iconLeft {
+    margin-right: 7px
+}
+
+.iconRight {
+    margin-left: 7px;
+}
+
+
+/*********************\ PADDING /*********************/
+
+.nopadding {
+    padding: 0px !important
+}
+
+.padding_horiz_none {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.padding_05 {
+    padding: .5rem !important
+}
+
+.padding_1 {
+    padding: 1rem !important
+}
+
+.padding_1_05 {
+    padding: .5rem 1rem !important
+}
+
+.padding_2 {
+    padding: 2rem !important
+}
+
+
+/*********************\ TEXT /*********************/
+
+.textJustify {
+    text-align: justify
+}
+
+.textRight {
+    text-align: right
+}
+
+.textUpper {
+    text-transform: uppercase
+}
+
+.textCapitalize {
+    text-transform: capitalize;
+}
+
+.textItalic {
+    font-style: italic
+}
+
+
+/*********************\ RESIZES /*********************/
+
+.full_absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.desktop {
+    display: block
+}
+
+.mobile {
+    display: none
+}
+
+.desktopflex {
+    display: flex;
+}
+
+.widthfull {
+    width: 100% !important
+}
+
+.heightfull {
+    height: 100%;
+}
+
+.containerEighteen {
+    width: 80%;
+    margin-left: 10%
+}
+
+.showMobile {
+    display: none
+}
+
+.hideMobile {
+    display: block
+}
+
+@media (max-width: 961px) {
+    .showMobile {
+        display: none
+    }
+    .hideMobile {
+        display: block
+    }
+    .desktop {
+        display: none
+    }
+    .desktopflex {
+        display: none;
+    }
+    .mobile {
+        display: block
+    }
+    .clearContainer {
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
+    /* CONTAINER MOBILE */
+    .containerMobile {
+        width: 90%;
+        margin-left: 5%;
+    }
+    /* ALINHAMENTO */
+    .centerMobile {
+        text-align: center
+    }
+    /* MARGIN */
+    .margin_1_bottom_mobile {
+        margin-bottom: 1rem !important
+    }
+    .margin_1_top_mobile {
+        margin-top: 1rem !important
+    }
+    .margin_2_top_mobile {
+        margin-top: 2rem !important
+    }
+    .margin_top_none_mobile {
+        margin: 0px !important
+    }
+    .nopaddingmobile {
+        padding: 0px !important
+    }
+    .padding15mobile {
+        padding: 15px !important
+    }
+    .margin_1_0_mobile {
+        margin: 1rem 0 !important
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width: 768px) {
+    .showMobile {
+        display: none
+    }
+    .hideMobile {
+        display: block
+    }
+}
+
+
+/* MOBILE ONLY */
+
+@media (max-width: 540px) {
+    .flex {
+        display: flex;
+    }
+    .showMobile {
+        display: block
+    }
+    .hideMobile {
+        display: none
+    }
+}
