@@ -31,7 +31,6 @@ node_modules/
 # WORDPRESS
 wp-content/upgrade/
 wp-content/updraft/
-wp-content/uploads/
 wp-content/aiowps_backups/
 wp-config.php
 
