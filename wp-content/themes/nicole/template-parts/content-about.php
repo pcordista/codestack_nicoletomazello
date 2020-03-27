@@ -13,7 +13,7 @@
                 <div>
                     <?php the_field('nicole_tomazella'); ?> </div>
                 <div class="margin_2_top">
-                    <a href="./about.php" class="button-default textUpper">
+                    <a href="/sobre" class="button-default textUpper">
                         saiba mais
                     </a>
                 </div>

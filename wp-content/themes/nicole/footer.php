@@ -38,9 +38,9 @@
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" class="nt">
 
 		<div class="margin_2_top flex alignCenter textUpper footer-menu">
-			<a href="#">produtos</a>
+			<a href="<?php the_field('link_produtos', 'options'); ?>">produtos</a>
 			<div>nt desenvolvimento humano ltda</div>
-			<a href="#">videos</a>
+			<a href="<?php the_field('link_videos', 'options'); ?>">videos</a>
 		</div>
 		<div class="margin_1_top">
 			<a href="#">

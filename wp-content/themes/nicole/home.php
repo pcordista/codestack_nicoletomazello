@@ -11,7 +11,6 @@ get_header();
     <main id="main" class="site-main">
 
         <?php
-        get_template_part('template-parts/content', 'menu-internal');
 
         get_template_part('template-parts/content', 'sidebar');
         ?>

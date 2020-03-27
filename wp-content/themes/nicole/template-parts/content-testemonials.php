@@ -6,7 +6,7 @@
                 Depoimentos
             </div>
             <div class="title">
-                Lorem Ipsum
+                <?php the_field('subtitulo_depoimentos', 'option'); ?>
             </div>
         </div>
         <div class="swiper-container swiper-testemonials">

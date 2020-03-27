@@ -8,14 +8,13 @@
  * @package Code_Starter
  */
 
-get_header();
+get_header('internal');
 ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
 		<?php
-		get_template_part('template-parts/content', 'menu-internal');
 
 		get_template_part('template-parts/content', 'sidebar');
 
@@ -26,8 +25,8 @@ get_header();
 			the_post(); ?>
 
 			<div class="banner relative">
-				<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="widthfull hide-on-med-and-down">
-				<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="widthfull hide-on-large-only">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-blog.jpg" class="widthfull hide-on-med-and-down">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-blog.jpg" class="widthfull hide-on-large-only">
 				<div class="content full_absolute flex alignCenter justifycenter textCapitalize white-text">
 					<?php the_title(); ?>
 				</div>

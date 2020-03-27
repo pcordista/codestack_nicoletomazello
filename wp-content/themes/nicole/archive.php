@@ -7,7 +7,7 @@
  * @package Code_Starter
  */
 
-get_header();
+get_header('internal');
 ?>
 
 	<div id="primary" class="content-area">

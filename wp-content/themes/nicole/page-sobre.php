@@ -4,14 +4,13 @@
  * @package Code_Starter
  */
 
-get_header();
+get_header('internal');
 ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
 
         <?php
-        get_template_part('template-parts/content', 'menu-internal');
 
         get_template_part('template-parts/content', 'sidebar');
 
